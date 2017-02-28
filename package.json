@@ -1,0 +1,35 @@
+{
+  "name": "redux-persist-memory-storage",
+  "version": "0.0.1",
+  "description": "memory storage for redux-persist",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "files": ["lib/*", "es/*"],
+  "scripts": {
+    "test": "cross-env BABEL_ENV=commonjs mocha --compilers js:babel-register --require babel-polyfill test/index.js",
+    "clean": "rimraf lib es",
+    "build": "npm run clean && npm run build:commonjs && npm run build:es",
+    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --source-maps",
+    "build:es": "cross-env BABEL_ENV=es babel src --out-dir es --source-maps"
+  },
+  "author": {
+    "name": "jonathan schatz",
+    "email": "jon@divisionbyzero.com",
+    "url": "https://github.com/modosc"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-register": "^6.23.0",
+    "chai": "^3.5.0",
+    "cross-env": "^3.1.4",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.6.1",
+    "sinon": "^1.17.7",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {}
+}
