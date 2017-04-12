@@ -1,11 +1,22 @@
 {
   "name": "redux-persist-memory-storage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "memory storage for redux-persist",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
-  "files": ["lib/*", "es/*"],
+  "files": [
+    "lib/*",
+    "es/*"
+  ],
+  "homepage": "https://github.com/modosc/redux-persist-memory-storage",
+  "bugs": {
+    "url": "https://github.com/modosc/redux-persist-memory-storage/issues"
+  },
+  "keywords": [
+    "redux-persist",
+    "redux"
+  ],
   "scripts": {
     "test": "cross-env BABEL_ENV=commonjs mocha --compilers js:babel-register --require babel-polyfill test/index.js",
     "clean": "rimraf lib es",
@@ -20,16 +31,21 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.23.0",
+    "babel-cli": "^6.24.1",
     "babel-polyfill": "^6.23.0",
-    "babel-preset-latest": "^6.22.0",
-    "babel-register": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-register": "^6.24.1",
     "chai": "^3.5.0",
-    "cross-env": "^3.1.4",
+    "cross-env": "^3.2.4",
     "mocha": "^3.2.0",
     "rimraf": "^2.6.1",
     "sinon": "^1.17.7",
-    "sinon-chai": "^2.8.0"
+    "sinon-chai": "^2.9.0"
   },
-  "dependencies": {}
+  "dependencies": {
+  },
+  "repository" :
+    { "type" : "git",
+      "url" : "https://github.com/modosc/redux-persist-memory-storage.git" }
+
 }
