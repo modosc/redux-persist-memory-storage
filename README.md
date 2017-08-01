@@ -5,7 +5,7 @@
 
 Data isn't persisted anywhere other than memory so this isn't appropriate for general use. There are a few cases where this may be useful:
 
-1. As a fallback when trying to use [localforage](https://github.com/localForage/localForage) or [redux-persist-cookie-storage](https://github.com/abersager/redux-persist-cookie-storage]) on a client that's blocked access to `cookies` or `localStorage` (see [this](https://github.com/rt2zz/redux-persist/issues/264) discussion for more)
+1. As a fallback when trying to use [localforage](https://github.com/localForage/localForage) or [redux-persist-cookie-storage](https://github.com/abersager/redux-persist-cookie-storage) on a client that's blocked access to `cookies` or `localStorage` (see [this](https://github.com/rt2zz/redux-persist/issues/264) discussion for more)
 2. In testing
 
 
@@ -17,7 +17,7 @@ npm install redux-persist-memory-storage
 
 ## Usage
 ### Client
-Conditionally use [redux-persist-cookie-storage](https://github.com/abersager/redux-persist-cookie-storage]):
+Conditionally use [redux-persist-cookie-storage](https://github.com/abersager/redux-persist-cookie-storage):
 ```
 import { persistStore, autoRehydrate } from 'redux-persist'
 import MemoryStorage from 'redux-persist-memory-storage'
