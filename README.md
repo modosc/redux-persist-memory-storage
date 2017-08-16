@@ -1,5 +1,4 @@
-# redux-persist-memory-storage
-[![npm version](http://img.shields.io/npm/v/redux-persist-memory-storage.svg?style=flat-square)](http://browsenpm.org/package/redux-persist-memory-storage)
+# redux-persist-memory-storage [![npm version](https://badge.fury.io/js/redux-persist-memory-storage.svg)](https://badge.fury.io/js/redux-persist-memory-storage)
 
 [Redux Persist](https://github.com/rt2zz/redux-persist) memory storage adapter.
 
