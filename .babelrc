@@ -1,14 +1,21 @@
 {
-  "presets": [
-    ["latest", {
-      "es2015": {
-        "modules": false
-      }
-    }]
-  ],
+  "comments": false,
+  "presets": ["@babel/preset-env"],
+  "plugins": ["@babel/plugin-transform-runtime"],
   "env": {
-    "commonjs": {
-      "presets": ['latest'],
+    "es": {
+      "presets": [
+        ["@babel/preset-env", {
+          "modules": false
+        }]
+      ],
     },
+    "commonjs": {
+      "plugins": ["add-module-exports", "@babel/plugin-transform-runtime"]
+    },
+    "test": {
+      "presets": ["@babel/preset-env"],
+      "plugins": ["add-module-exports",  "@babel/plugin-transform-runtime"]
+    }
   },
 }

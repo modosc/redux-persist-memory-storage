@@ -66,12 +66,12 @@ describe('memory-storage', () => {
     it('works without a callback', async () => {
       const result = await storage.removeItem('foo')
       expect(result).to.equal('bar')
-      expect(storage.storage.foo).to.be.empty
+      expect(storage.storage.foo).to.be.undefined
     })
     it('works with a callback', async () => {
       const result = await storage.removeItem('foo', callback)
       expect(result).to.equal('bar')
-      expect(storage.storage.foo).to.be.empty
+      expect(storage.storage.foo).to.be.undefined
       expect(callback).to.have.been.calledOnce
       expect(callback).to.have.been.calledWith(null, result)
     })
