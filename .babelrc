@@ -1,21 +1,36 @@
 {
   "comments": false,
-  "presets": ["@babel/preset-env"],
-  "plugins": ["@babel/plugin-transform-runtime"],
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime"
+  ],
   "env": {
     "es": {
       "presets": [
-        ["@babel/preset-env", {
-          "modules": false
-        }]
-      ],
+        [
+          "@babel/preset-env",
+          {
+            "modules": false
+          }
+        ]
+      ]
     },
     "commonjs": {
-      "plugins": ["add-module-exports", "@babel/plugin-transform-runtime"]
+      "plugins": [
+        "add-module-exports",
+        "@babel/plugin-transform-runtime"
+      ]
     },
     "test": {
-      "presets": ["@babel/preset-env"],
-      "plugins": ["add-module-exports",  "@babel/plugin-transform-runtime"]
+      "presets": [
+        "@babel/preset-env"
+      ],
+      "plugins": [
+        "add-module-exports",
+        "@babel/plugin-transform-runtime"
+      ]
     }
-  },
+  }
 }
