@@ -1,6 +1,6 @@
 {
   "name": "redux-persist-memory-storage",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "memory storage for redux-persist",
   "main": "lib/index.js",
   "module": "es/index.js",
