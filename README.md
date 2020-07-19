@@ -1,4 +1,4 @@
-# redux-persist-memory-storage [![npm version](https://badge.fury.io/js/redux-persist-memory-storage.svg)](https://badge.fury.io/js/redux-persist-memory-storage)
+# redux-persist-memory-storage [![npm version](https://badge.fury.io/js/redux-persist-memory-storage.svg)](https://badge.fury.io/js/redux-persist-memory-storage) ![Node.js CI](https://github.com/modosc/redux-persist-memory-storage/workflows/Node.js%20CI/badge.svg)
 
 [Redux Persist](https://github.com/rt2zz/redux-persist) memory storage adapter.
 
